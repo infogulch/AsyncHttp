@@ -37,9 +37,11 @@ for name, repo in repos
          . "`n`tdownloads: "
     loop % downloads.maxindex()
         info .= "`n`t`t" downloads[A_Index].name ": " downloads[A_Index].zipball_url
+    info .= "`n"
 }
 info := substr(info, 2)
 
+tooltip
 msgbox % info
 
 Finished( id ) {

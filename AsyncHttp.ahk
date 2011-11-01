@@ -24,7 +24,7 @@ reqs.Abort([1,5,7])
 
 */
 
-#Include WinHttpRequest.ahk
+#Include ..\WinHttpRequest\WinHttpRequest.ahk
 
 class AsyncHttp {
     idx := 0
